@@ -1,0 +1,180 @@
+/* CSS files add styling rules to your content */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: whitesmoke;
+  color: rgb(51,51,51);
+  font-family: sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+/* COMPARTIDOS */
+a {
+  color: darkcyan;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  margin: 0 0 1rem 0;
+  padding: 0;
+}
+
+p:last-child,
+h1:last-child,
+h2:last-child,
+h3:last-child,
+h4:last-child,
+h5:last-child,
+h6:last-child {
+  margin-bottom: 0;
+}
+
+.contenedor {
+  margin: auto;
+  width: 990px;
+}
+
+/* HEADER */
+header {
+  background: darkcyan;
+  color: whitesmoke;
+  padding: 1.25rem 0;
+  text-align: center;
+  width: 100vw;
+}
+
+header h1 {
+  font-weight: 300;
+}
+
+header p {
+  font-weight: 300;
+  margin: 0;
+}
+
+/* MAIN */
+main {
+  background: brown;
+  height: 600px; /* Aquí puedes cambiar el alto del carrusel */
+  position: relative;
+  width: 100vw;
+}
+
+main > .el-carrusel {
+  height: 100%;
+  position: relative;
+  width: 100%;
+  z-index: 10;
+}
+
+main > .el-carrusel > .el-carrusel-item {
+  align-items: center;
+  display: flex;
+  flex-flow: row nowrap;
+  height: 100%;
+  justify-content: center;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  transition: all 3s ease;
+  width: 100%;
+  z-index: 10;
+}
+
+main > .el-carrusel > .el-carrusel-item.activo {
+  opacity: 1;
+  z-index: 12;
+}
+
+main > .el-carrusel > .el-carrusel-item > * {
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+main > .el-carrusel > .el-carrusel-item > * h2 {
+  color: white;
+  margin: 0;
+}
+
+main > .el-carrusel > .el-carrusel-item > * a {
+  color: yellow;
+  pointer-events: none;
+}
+
+main > .el-carrusel > .el-carrusel-item.activo > * a {
+  pointer-events: auto !important;
+}
+
+main > nav {
+  bottom: 1rem;
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+
+main > nav ul {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  list-style-type: none;
+  margin: 0 -.2rem;
+  padding: 0;
+}
+
+main > nav ul > * {
+  flex: 0 0 auto;
+  margin: 0 .2rem;
+}
+
+main > nav ul li a {
+  background: rgba(255,255,255,.75);
+  border: 1px transparent solid;
+  display: block;
+  height: 1.25rem;
+  transition: all .25s ease;
+  width: 3rem;
+}
+
+main > nav ul li:first-child a {
+  border-bottom-left-radius: .5rem;
+  border-top-left-radius: .5rem;
+}
+
+main > nav ul li:last-child a {
+  border-bottom-right-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+main > nav ul li a:hover,
+main > nav ul li a.activo {
+  background: white;
+  border-color: lightgray;
+}
+
+/* FOOTER */
+footer {
+  background: yellowgreen;
+  padding: 1.25rem 0;
+  text-align: center;
+  width: 100vw;
+}
+
+footer h4 {
+  margin: 0;
+}
+
+footer p {
+  font-weight: 300;
+  margin: 0;
+}

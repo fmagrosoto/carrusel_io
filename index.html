@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <title>Carrusel FadeIO</title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/style.css">
+  </head>  
+  <body>
+    <header>
+      <div class="contenedor">
+        <h1>Este es un DEMO para Carrusel</h1>
+        <p>Carrusel con efecto FadeOut / FadeIn con puro Javascript y CSS.</p>
+        <p>Se puede ajustar el alto del carrusel como sea que lo necesites.</p>
+      </div>
+    </header>
+
+    <main>
+      <div class="el-carrusel">
+        <div class="el-carrusel-item">
+          <div class="contenido">
+            <h2>Este es un H2 del primer bloque</h2>
+            <a target="_blank" href="//playboy.com">Vínculo del primer bloque</a>
+          </div>
+        </div>
+    
+        <div class="el-carrusel-item">
+          <div class="contenido">
+            <h2>Este es un H2 del segundo bloque</h2>
+          </div>
+        </div>
+    
+        <div class="el-carrusel-item">
+          <div class="contenido">
+            <h2>Este es un H2 del tercer bloque</h2>
+            <a target="_blank" href="//musicforprogramming.net/">Vínculo del tercer bloque</a>
+          </div>
+        </div>
+      </div>
+
+      <nav>
+        <ul>
+          <li><a href="#" data-target="0"></a></li>
+          <li><a href="#" data-target="1"></a></li>
+          <li><a href="#" data-target="2"></a></li>
+        </ul>
+      </nav>
+    </main>
+
+    <footer>
+      <div class="contenedor">
+        <h4>Carrusel FadeIO</h4>
+        <p>Idea original: Polo Limón</p>
+        <p>Idea bajada a código: Fernando Magrosoto</p>
+        <p>Persona que no participó en el proyecto: Norberto Prieto</p>
+      </div>
+    </footer>
+
+    <!-- include the Glitch button to show what the webpage is about and
+          to make it easier for folks to view source and remix -->
+    <div class="glitchButton" style="position:fixed;top:20px;right:20px;"></div>
+    <script src="https://button.glitch.me/button.js"></script>
+    <!-- import the webpage's javascript file -->
+    <script src="/script.js" defer></script>
+  </body>
+</html>
